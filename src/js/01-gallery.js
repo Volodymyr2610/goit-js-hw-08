@@ -20,6 +20,7 @@ const galleryMarkup = galleryItems.map(({preview, original, description}) =>
 </a>
 </div>`)  
 .join("");
+
 galleryRef.insertAdjacentHTML('afterbegin', galleryMarkup)
 new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
